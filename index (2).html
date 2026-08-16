@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kabir Anand — Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Kabir Anand, full-stack developer. Projects, skills, and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__mark" aria-label="Home">
+      <span class="nav__mark-box">KA</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" class="nav__link" data-nav>01 About</a>
+      <a href="#work" class="nav__link" data-nav>02 Work</a>
+      <a href="#skills" class="nav__link" data-nav>03 Skills</a>
+      <a href="#contact" class="nav__link" data-nav>04 Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn--ghost nav__cta">Let's talk</a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO / SHEET 01 ============ -->
+<section class="hero" id="top">
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="crosshair" id="crosshair" aria-hidden="true">
+    <div class="crosshair__v"></div>
+    <div class="crosshair__h"></div>
+    <div class="crosshair__coords" id="coords">X 000 · Y 000</div>
+  </div>
+
+  <div class="hero__inner">
+    <p class="eyebrow eyebrow--light">Sheet 01 / 05 — Elevation</p>
+
+    <h1 class="hero__title">
+      Kabir Anand
+      <span class="hero__title-sub">builds interfaces that hold their shape under load.</span>
+    </h1>
+
+    <p class="hero__lede">
+      Full-stack developer working across React, Node, and the occasional slab of raw SQL.
+      Based in Meerut, India — open to remote work and freelance projects.
+    </p>
+
+    <div class="hero__actions">
+      <a href="#work" class="btn btn--solid">View the work</a>
+      <a href="#contact" class="btn btn--outline">Get in touch</a>
+    </div>
+
+    <div class="hero__meta">
+      <span>Currently: <strong>Available for new projects</strong></span>
+    </div>
+  </div>
+
+  <div class="hero__schematic" aria-hidden="true">
+    <svg viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg" id="schematicSvg">
+      <!-- structural frame -->
+      <rect class="draw" x="60" y="60" width="300" height="300" rx="2" stroke="currentColor" stroke-width="1.2"/>
+      <path class="draw" d="M60 150 H360" stroke="currentColor" stroke-width="1"/>
+      <path class="draw" d="M60 270 H360" stroke="currentColor" stroke-width="1"/>
+      <path class="draw" d="M180 60 V360" stroke="currentColor" stroke-width="1"/>
+      <!-- nodes -->
+      <circle class="draw" cx="180" cy="150" r="5" stroke="currentColor" stroke-width="1.4"/>
+      <circle class="draw" cx="60" cy="270" r="5" stroke="currentColor" stroke-width="1.4"/>
+      <circle class="draw" cx="360" cy="60" r="5" stroke="currentColor" stroke-width="1.4"/>
+      <circle class="draw" cx="360" cy="360" r="5" stroke="currentColor" stroke-width="1.4"/>
+      <!-- diagonals -->
+      <path class="draw" d="M60 60 L180 150" stroke="currentColor" stroke-width="1"/>
+      <path class="draw" d="M180 150 L360 60" stroke="currentColor" stroke-width="1"/>
+      <path class="draw" d="M60 270 L180 150" stroke="currentColor" stroke-width="1"/>
+      <path class="draw" d="M180 150 L360 360" stroke="currentColor" stroke-width="1"/>
+      <!-- corner ticks -->
+      <path class="draw" d="M60 60 h14 M60 60 v14" stroke="currentColor" stroke-width="1.4"/>
+      <path class="draw" d="M360 360 h-14 M360 360 v-14" stroke="currentColor" stroke-width="1.4"/>
+    </svg>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ ABOUT / SHEET 02 ============ -->
+<section class="section" id="about">
+  <div class="section__inner">
+    <p class="eyebrow">Sheet 02 / 05 — About</p>
+    <h2 class="section__title">A developer's spec sheet.</h2>
+
+    <div class="about">
+      <div class="about__copy reveal">
+        <p>
+          I'm a full-stack developer who likes the unglamorous parts of software the most —
+          the schema that doesn't need a rewrite in six months, the API that fails loudly
+          instead of silently, the layout that survives a font change without falling over.
+        </p>
+        <p>
+          Over the last few years I've worked across small product teams and freelance
+          contracts, shipping everything from internal dashboards to customer-facing web
+          apps. I care about clean structure as much as clean visuals — the two usually
+          come from the same habit of paying attention.
+        </p>
+        <p>
+          When I'm not at the keyboard, I'm probably reading about type systems, sketching
+          UI on actual paper, or arguing that tabs and spaces both have their place.
+        </p>
+      </div>
+
+      <dl class="specs reveal">
+        <div class="specs__row">
+          <dt>Location</dt>
+          <dd>Meerut, Uttar Pradesh, India</dd>
+        </div>
+        <div class="specs__row">
+          <dt>Focus</dt>
+          <dd>Full-stack web development</dd>
+        </div>
+        <div class="specs__row">
+          <dt>Experience</dt>
+          <dd>3+ years, freelance &amp; product teams</dd>
+        </div>
+        <div class="specs__row">
+          <dt>Availability</dt>
+          <dd>Open to remote &amp; contract work</dd>
+        </div>
+        <div class="specs__row">
+          <dt>Stack</dt>
+          <dd>React · Node.js · PostgreSQL</dd>
+        </div>
+        <div class="specs__row">
+          <dt>Resume</dt>
+          <dd><a href="#contact">Request a copy →</a></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS / SHEET 03 ============ -->
+<section class="section section--tint" id="work">
+  <div class="section__inner">
+    <p class="eyebrow">Sheet 03 / 05 — Selected work</p>
+    <h2 class="section__title">Things I've built.</h2>
+    <p class="section__intro reveal">
+      A few projects that show range — from data-heavy dashboards to small tools built
+      for a specific, real problem. Replace these with your own case studies and links.
+    </p>
+
+    <div class="projects">
+
+      <article class="project-card reveal">
+        <div class="project-card__head">
+          <span class="project-card__num">P.01</span>
+          <div class="project-card__links">
+            <a href="#" aria-label="Live demo">Live ↗</a>
+            <a href="#" aria-label="Source code">Code ↗</a>
+          </div>
+        </div>
+        <h3 class="project-card__title">Ledger — expense tracker for freelancers</h3>
+        <p class="project-card__desc">
+          A lightweight invoicing and expense dashboard with client-level reporting,
+          CSV export, and a reminders system for overdue payments.
+        </p>
+        <ul class="tag-list">
+          <li>React</li><li>Node.js</li><li>PostgreSQL</li><li>Chart.js</li>
+        </ul>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__head">
+          <span class="project-card__num">P.02</span>
+          <div class="project-card__links">
+            <a href="#" aria-label="Live demo">Live ↗</a>
+            <a href="#" aria-label="Source code">Code ↗</a>
+          </div>
+        </div>
+        <h3 class="project-card__title">Fieldnote — offline-first survey app</h3>
+        <p class="project-card__desc">
+          A PWA for collecting structured survey data in low-connectivity areas, with
+          local-first storage and background sync once a connection is available.
+        </p>
+        <ul class="tag-list">
+          <li>Next.js</li><li>IndexedDB</li><li>Express</li><li>PWA</li>
+        </ul>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__head">
+          <span class="project-card__num">P.03</span>
+          <div class="project-card__links">
+            <a href="#" aria-label="Live demo">Live ↗</a>
+            <a href="#" aria-label="Source code">Code ↗</a>
+          </div>
+        </div>
+        <h3 class="project-card__title">Grainline — recipe scaler &amp; planner</h3>
+        <p class="project-card__desc">
+          A small tool that scales ingredient quantities by serving size and builds a
+          consolidated shopping list across a week's worth of planned meals.
+        </p>
+        <ul class="tag-list">
+          <li>Vue</li><li>Firebase</li><li>Tailwind</li>
+        </ul>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__head">
+          <span class="project-card__num">P.04</span>
+          <div class="project-card__links">
+            <a href="#" aria-label="Live demo">Live ↗</a>
+            <a href="#" aria-label="Source code">Code ↗</a>
+          </div>
+        </div>
+        <h3 class="project-card__title">Signal — internal analytics dashboard</h3>
+        <p class="project-card__desc">
+          A role-based internal dashboard for a 12-person team, pulling from three
+          different data sources into one reporting surface.
+        </p>
+        <ul class="tag-list">
+          <li>React</li><li>D3.js</li><li>Express</li><li>Redis</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS / SHEET 04 ============ -->
+<section class="section" id="skills">
+  <div class="section__inner">
+    <p class="eyebrow">Sheet 04 / 05 — Skills</p>
+    <h2 class="section__title">Tools of the trade.</h2>
+
+    <div class="skills">
+
+      <div class="skill-group reveal">
+        <h3 class="skill-group__title">Frontend</h3>
+        <ul class="skill-list">
+          <li class="skill">
+            <div class="skill__row"><span>JavaScript / TypeScript</span><span class="skill__pct">90%</span></div>
+            <div class="skill__bar"><span style="--val:90%"></span></div>
+          </li>
+          <li class="skill">
+            <div class="skill__row"><span>React</span><span class="skill__pct">85%</span></div>
+            <div class="skill__bar"><span style="--val:85%"></span></div>
+          </li>
+          <li class="skill">
+            <div class="skill__row"><span>CSS / Design systems</span><span class="skill__pct">80%</span></div>
+            <div class="skill__bar"><span style="--val:80%"></span></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 class="skill-group__title">Backend</h3>
+        <ul class="skill-list">
+          <li class="skill">
+            <div class="skill__row"><span>Node.js / Express</span><span class="skill__pct">85%</span></div>
+            <div class="skill__bar"><span style="--val:85%"></span></div>
+          </li>
+          <li class="skill">
+            <div class="skill__row"><span>PostgreSQL / SQL</span><span class="skill__pct">75%</span></div>
+            <div class="skill__bar"><span style="--val:75%"></span></div>
+          </li>
+          <li class="skill">
+            <div class="skill__row"><span>REST &amp; GraphQL APIs</span><span class="skill__pct">80%</span></div>
+            <div class="skill__bar"><span style="--val:80%"></span></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 class="skill-group__title">Tooling &amp; practice</h3>
+        <ul class="skill-list">
+          <li class="skill">
+            <div class="skill__row"><span>Git / CI pipelines</span><span class="skill__pct">85%</span></div>
+            <div class="skill__bar"><span style="--val:85%"></span></div>
+          </li>
+          <li class="skill">
+            <div class="skill__row"><span>Testing (Jest, Playwright)</span><span class="skill__pct">70%</span></div>
+            <div class="skill__bar"><span style="--val:70%"></span></div>
+          </li>
+          <li class="skill">
+            <div class="skill__row"><span>Docker / deployment</span><span class="skill__pct">65%</span></div>
+            <div class="skill__bar"><span style="--val:65%"></span></div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / SHEET 05 ============ -->
+<section class="section section--dark" id="contact">
+  <div class="grid-overlay grid-overlay--dark" aria-hidden="true"></div>
+  <div class="section__inner">
+    <p class="eyebrow eyebrow--light">Sheet 05 / 05 — Contact</p>
+    <h2 class="section__title section__title--light">Let's build something.</h2>
+    <p class="section__intro section__intro--light reveal">
+      Have a project, a role, or just a question? The form below reaches me directly —
+      or use whichever channel you prefer.
+    </p>
+
+    <div class="contact">
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+          <span class="field__error" id="nameError"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+          <span class="field__error" id="emailError"></span>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="field__error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn btn--solid btn--wide">Send message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-info reveal">
+        <div class="contact-info__block">
+          <span class="contact-info__label">Email</span>
+          <a href="mailto:hello@kabiranand.dev">hello@kabiranand.dev</a>
+        </div>
+        <div class="contact-info__block">
+          <span class="contact-info__label">Elsewhere</span>
+          <a href="#">GitHub ↗</a>
+          <a href="#">LinkedIn ↗</a>
+          <a href="#">Twitter / X ↗</a>
+        </div>
+        <div class="contact-info__block">
+          <span class="contact-info__label">Based in</span>
+          <span>Meerut, Uttar Pradesh, India</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Kabir Anand</span>
+    <span class="footer__coords">28.9845° N · 77.7064° E</span>
+  </footer>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
